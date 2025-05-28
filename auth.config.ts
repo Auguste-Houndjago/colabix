@@ -1,6 +1,7 @@
 import type { NextAuthConfig } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { getUser } from "@/lib/database";
+import GithubProvider from "next-auth/providers/github";
 
 export const authConfig: NextAuthConfig = {
   // Configure one or more authentication providers
@@ -36,14 +37,14 @@ export const authConfig: NextAuthConfig = {
       },
     }),
 
-    /*
+
     // Use GitHub authentication
-    // import GithubProvider from "next-auth/providers/github";
+  
     GithubProvider({
       clientId: process.env.GITHUB_CLIENT_ID as string,
       clientSecret: process.env.GITHUB_CLIENT_SECRET as string,
     }),
-    */
+    
 
     /*
     // Use Auth0 authentication

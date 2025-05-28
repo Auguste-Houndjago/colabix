@@ -18,7 +18,7 @@ export function NextAuthLogin({ providers }: Props) {
     <div className={styles.actions}>
       {Object.entries(providers).map(([id, name]) => (
         <Button key={name} onClick={() => signIn(id)}>
-          Sign in with {name}
+          Sign in with {name} 
         </Button>
       ))}
     </div>
