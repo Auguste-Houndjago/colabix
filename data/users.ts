@@ -24,10 +24,10 @@ export const users: Omit<User, "color">[] = [
     groupIds: ["product", "engineering", "design"],
   },
   {
-    id: "komietsru1@gmail.com",
+    id: "komietsru1@gmail.com", 
     name: "Komi etru",
     avatar: "https://liveblocks.io/avatars/avatar-3.png",
-    groupIds: ["engineering"],
+    groupIds: ["product","engineering"],
   },
   {
     id: "tatum.paolo@example.com",
