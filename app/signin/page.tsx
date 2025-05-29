@@ -18,9 +18,9 @@ export default async function SignInPage() {
     <div className={styles.container}>
       <main className={styles.main}>
         <h2 className={styles.title}>Sign in to your account</h2>
-        {providers && providers.credentials ? (
-          <DemoLogin />
-        ) : (
+        {providers && providers.credentials && (
+        //   <DemoLogin />
+        // ) : (
           <NextAuthLogin providers={providers} />
         )}
       </main>
